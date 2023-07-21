@@ -10,13 +10,15 @@ const Eye: FunctionComponent<IEyeProps> = () => {
 
     useEffect(() => {
         document.addEventListener("mousemove", eyeMover);
+        document.addEventListener("touchstart", eyeMover);
 
         return () => {
             document.removeEventListener("mousemove", eyeMover);
+            document.removeEventListener("touchstart", eyeMover);
         };
     }, []);
 
-    const eyeMover = (event: MouseEvent) => {
+    const eyeMover = (event: MouseEvent | TouchEvent) => {
         if (!eyeBallRef.current) {
             return;
         }
@@ -28,11 +30,17 @@ const Eye: FunctionComponent<IEyeProps> = () => {
             eyeBallRef.current.getBoundingClientRect().top +
             eyeBallRef.current.clientHeight / 2;
 
-        const x = event.clientX;
-        const y = event.clientY;
-
+        let x;
+        let y;
+        if (event instanceof MouseEvent) {
+            x = event.clientX;
+            y = event.clientY;
+        } else {
+            x = event.touches[0]?.clientX;
+            y = event.touches[0]?.clientY;
+        }
         const radian = Math.atan2(x - eyeX, y - eyeY);
-        const rotationDegrees = radian * (180 / Math.PI) * -1 + 180;
+        const rotationDegrees = radian * (180 / Math.PI) * -1 + 140;
         eyeBallRef.current.style.transform =
             "rotate(" + rotationDegrees.toString() + "deg)";
     };

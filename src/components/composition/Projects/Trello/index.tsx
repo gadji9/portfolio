@@ -26,7 +26,6 @@ const Trello: FunctionComponent = () => {
 
 const PreviewVideo: PreviewComponent = ({ startAnimation }) => {
     const videoRef = useRef<HTMLVideoElement>(null);
-    console.log(videoRef.current?.play());
     useEffect(() => {
         if (!videoRef.current) {
             return;
