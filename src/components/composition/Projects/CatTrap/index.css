@@ -1,0 +1,24 @@
+.cattrap-preview-image {
+    transition: all 1s;
+    width: 17vmax;
+    height: 17vmax;
+    max-width: none;
+    border-radius: 2vw;
+    filter:  invert(80%);
+    transform: translate(20%);
+
+}
+
+
+.cattrap-preview-image.move {
+    transform: translate(20%, 30px);
+}
+
+
+@media (max-width: 1024px) {
+    .cattrap-preview-image {
+        width: 25vmax;
+        height: 25vmax;
+        transform: translate(25%);
+    }
+ }

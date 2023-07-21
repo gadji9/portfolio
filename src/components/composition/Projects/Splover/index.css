@@ -1,0 +1,29 @@
+
+
+
+.splover-preview-image {
+    transition: all 1s;
+    width: 35vw;
+    height: 17vw;
+    max-width: none;
+    border-radius: 2vw;
+    transform: translate(15%);
+    filter: brightness(80%);
+
+    object-fit: cover;
+}
+
+
+
+.splover-preview-image.move {
+    transform: translate(15%, 30px);
+}
+
+
+@media (max-width: 1024px) {
+    .splover-preview-image {
+        width: 60vw;
+        object-fit: contain;
+        height: 40vw;
+    }
+ }
