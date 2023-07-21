@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Template, { PreviewComponent } from "../template";
+import Template, { PreviewComponent } from "../Template";
 import RinjaImg from "@/assets/rinja.jpg";
 import GooglePlay from "@/assets/google-play.png";
 

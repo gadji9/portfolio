@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Template, { PreviewComponent } from "../template";
+import Template, { PreviewComponent } from "../Template";
 import CatTrapImage from "@/assets/cattrap.png";
 import CatImage from "@/assets/cat.png";
 

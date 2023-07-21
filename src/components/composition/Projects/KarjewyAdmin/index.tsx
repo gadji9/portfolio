@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Template, { PreviewComponent } from "../template";
+import Template, { PreviewComponent } from "../Template";
 import KarjewyAdminImg from "@/assets/karjewy-admin.jpg";
 import AdminImg from "@/assets/admin.png";
 
@@ -8,7 +8,6 @@ import "./index.css";
 const technologies = "Vue, vuex";
 const name = "Karjewy admin";
 const description = "Admin panel for karjewy";
-
 
 const KarjewyAdmin: FunctionComponent = () => {
     return (

@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Template, { PreviewComponent } from "../template";
+import Template, { PreviewComponent } from "../Template";
 import SploverAdminImg from "@/assets/splover-admin.jpg";
 import AdminImg from "@/assets/admin.png";
 

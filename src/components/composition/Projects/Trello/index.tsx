@@ -1,5 +1,5 @@
 import { FunctionComponent, useEffect, useRef } from "react";
-import Template, { PreviewComponent } from "../template";
+import Template, { PreviewComponent } from "../Template";
 import TaskIamge from "@/assets/task.png";
 import trelloPreviewVideo from "@/assets/trello-preview.mp4";
 

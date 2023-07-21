@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Template, { PreviewComponent } from "../template";
+import Template, { PreviewComponent } from "../Template";
 import KarjewyImg from "@/assets/karjewy.jpg";
 import DiamondRing from "@/assets/diamond-ring.png";
 

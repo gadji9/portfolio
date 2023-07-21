@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Template, { PreviewComponent } from "../template";
+import Template, { PreviewComponent } from "../Template";
 import SploverImg from "@/assets/splover.png";
 import Dumbbell from "@/assets/dumbbell.png";
 

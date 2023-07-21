@@ -1,4 +1,3 @@
-import Cat from "@/components/composition/Cat";
 import Projects from "@/components/composition/Projects";
 import Eye from "@components/composition/Eye";
 import { FunctionComponent } from "react";

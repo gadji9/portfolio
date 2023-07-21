@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Template, { PreviewComponent } from "../template";
+import Template, { PreviewComponent } from "../Template";
 import SocialMedia from "@/assets/social-media.png";
 import SocialMediaActions from "@/assets/social-media-actions.png";
 
