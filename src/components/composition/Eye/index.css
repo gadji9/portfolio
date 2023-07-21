@@ -32,7 +32,7 @@
     border: 5px solid #000000;
     background-color: #ffffff;
     border-radius: 50%;
-    transition: all .5s;
+    transition: none
 }
 .eyeball {
     height: 3.2em;
@@ -58,6 +58,7 @@
     .eye {
         width: 5rem;
         height: 5rem;
+
       }
       .eyeball {
         height: 1.5em;
@@ -91,3 +92,9 @@
   }
 
   
+
+  @media (max-width: 1024px) {
+    .eye {
+      transition: all .5s;
+    }
+  }
