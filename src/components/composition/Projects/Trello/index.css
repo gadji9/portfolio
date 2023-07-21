@@ -2,8 +2,8 @@
 .trello-preview-video {
     transition: all 1s;
     width: 40vw;
-
     max-height: none;
+    max-width: none;
     border-radius: 2vw;
     transform: translate(10%);
     filter: drop-shadow(16px 16px 20px #330026) brightness(80%);
@@ -15,7 +15,7 @@
 
 @media (max-width: 1024px) {
     .trello-preview-video {
-        width: 65vw;
+        width: 60vw;
         transform: translate(9vw);
     }
  }

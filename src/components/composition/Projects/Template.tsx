@@ -39,7 +39,7 @@ const Template: FunctionComponent<ITemplateProps> = ({
             onMouseEnter={() => setStartAnimation(true)}
             onMouseLeave={() => setStartAnimation(false)}
         >
-            <div className="project-appear-icons">
+            <div className="project-appear-icons hidden lg:block">
                 <img src={effectsImg} alt="asd" />
             </div>
             <Tooltip title={technologies} position="top">
@@ -47,7 +47,6 @@ const Template: FunctionComponent<ITemplateProps> = ({
                     <div className="project-title__technologies">
                         {description}
                     </div>
-
                     <div className="project-title__name">{name}</div>
                 </div>
             </Tooltip>
