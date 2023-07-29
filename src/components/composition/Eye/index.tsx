@@ -40,7 +40,7 @@ const Eye: FunctionComponent<IEyeProps> = () => {
             y = event.touches[0]?.clientY;
         }
         const radian = Math.atan2(x - eyeX, y - eyeY);
-        const rotationDegrees = radian * (180 / Math.PI) * -1 + 140;
+        const rotationDegrees = radian * (180 / Math.PI) * -1 + 180;
         eyeBallRef.current.style.transform =
             "rotate(" + rotationDegrees.toString() + "deg)";
     };

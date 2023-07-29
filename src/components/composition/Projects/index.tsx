@@ -19,11 +19,11 @@ const Projects: FunctionComponent = () => {
                     These are interesting projects that come to my mind, or for
                     practicing new technologies.
                 </div>
-                <div className="w-full flex flex-col lg:flex-row justify-between lg:gap-20 gap-10 mt-5 lg:mt-10">
+                <div className="w-full flex flex-col lg:flex-row justify-between 2xl:gap-40 lg:gap-20 gap-10 mt-5 lg:mt-10">
                     <CatTrap />
                     <Trello />
                 </div>
-                <div className="w-full flex flex-col lg:flex-row justify-between gap-20 mt-10 lg:mt-20">
+                <div className="w-full flex flex-col lg:flex-row justify-between 2xl:gap-40 gap-20 mt-10 lg:mt-20">
                     <Rinja />
                     <HackerSM />
                 </div>
@@ -36,11 +36,11 @@ const Projects: FunctionComponent = () => {
                 <div className="text-body text-white lg:mb-24 mb-10 w-full text-center leading-8">
                     These are interesting projects that I`ve made on order
                 </div>
-                <div className="w-full flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 lg:mt-20 ">
+                <div className="w-full flex flex-col lg:flex-row justify-between  2xl:gap-40 gap-10 lg:gap-20 lg:mt-20 ">
                     <Splover />
                     <SploverAdmin />
                 </div>
-                <div className="w-full flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 mt-10 lg:mt-10 ">
+                <div className="w-full flex flex-col lg:flex-row justify-between  2xl:gap-40 gap-10 lg:gap-20 mt-10 lg:mt-10 ">
                     <Karjewy />
                     <KarjewyAdmin />
                 </div>

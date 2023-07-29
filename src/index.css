@@ -35,6 +35,8 @@ body {
 	min-height: 100%;
 	width: 100%;
 	background-color: rgb(17,17,17);
+    -scrollbarBgColor: var(--c-dark);
+    --scrollbarThumbColor: var(--c-accent);
 }
 #root {
 	height: 100%;
