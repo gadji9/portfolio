@@ -14,10 +14,10 @@ const MainPage: FunctionComponent = () => {
         setGreetings(true);
         setTimeout(() => {
             setIntroduce(true);
-        }, 2000);
+        }, 1300);
         setTimeout(() => {
             setDescription(true);
-        }, 5000);
+        }, 4000);
     }, []);
 
     return (
@@ -30,7 +30,7 @@ const MainPage: FunctionComponent = () => {
                                 <h1 className="font-extrabold text-transparent 2xl:text-6xl lg:text-4xl text-h2 bg-clip-text bg-gradient-to-r from-amber-500 to-rose-600 w-fit pb-2">
                                     <TypeAnimation
                                         sequence={[
-                                            1000,
+                                            300,
                                             "Hi.",
                                             1000, // wait 1s before replacing "Mice" with "Hamsters"
                                             "Hi.I am Gadjimurad",
