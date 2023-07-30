@@ -5,7 +5,7 @@ import LinkedInImg from "@/assets/linkedin.png";
 
 const Header: FunctionComponent = () => {
     return (
-        <div className="lg:px-36 ignore-padding w-full flex justify-between items-center">
+        <div className="ignore-padding xl:px-xlPagePaddingX lg:px-lgPagePaddingX  w-full flex justify-between items-center">
             <div className="w-[30%] text-xl flex gap-10">
                 <AppLink title="Work" href="/" inNewTab={false} />
                 <AppLink title="About" href="/About" inNewTab={false} />

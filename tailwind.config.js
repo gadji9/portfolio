@@ -10,6 +10,13 @@ export default {
                 h2: "var(--font-h2)",
                 h1: "var(--font-h1)",
             },
+            padding: {
+                pagePaddingTop: "var(--page-padding-top)",
+
+                xlPagePaddingX: "var(--page-padding-x-xl)",
+                lgPagePaddingX: "var(--page-padding-x-lg)",
+                mdPagePaddingX: "var(--page-padding-x-md)",
+            },
         },
     },
     plugins: [],

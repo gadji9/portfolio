@@ -63,15 +63,48 @@ table {
 }
 
 .size-to-end {
-    height: calc(100vh - 30px - 6rem);
+    height: calc(100vh - var(--navbar-height) - 5rem);
 }
 
 :root {
     --font-body: clamp(1rem, .8852rem + .4898vw, 1.375rem);
     --font-h2: clamp(1.5rem, 1rem + 2.449vw, 3.95rem);
     --font-h1: clamp(3.2rem, .5692rem + 8.238vw, 13.75rem);
+
+    --navbar-height: 30px;
+
+    --page-padding-top: 1.5rem;
+
+    --page-padding-x-xl: 9rem;
+    --page-padding-x-lg: 5rem;
+    --page-padding-x-md: 3.5rem;
 }
 
 :host ::ng-deep[title]:hover::after{
     background-color: red !important;
 }
+
+@media (max-width: 1280px) {
+    .size-to-end {
+        height: calc(100svh - var(--navbar-height) - 6rem);
+    }
+  }
+
+.ignore-padding {
+    width: calc(100% + var(--page-padding-x-xl) * 2); 
+    margin-left: calc(var(--page-padding-x-xl) * -1);
+}
+@media (max-width: 1280px) {
+    .ignore-padding {
+        width: calc(100% + var(--page-padding-x-lg) * 2); 
+        margin-left: calc(var(--page-padding-x-lg)  * -1);
+    }
+}
+
+@media (max-width: 1025px) {
+    .ignore-padding {
+        width: calc(100% + var(--page-padding-x-md) * 2); 
+        margin-left: calc(var(--page-padding-x-md) * -1) ;
+    }
+}
+
