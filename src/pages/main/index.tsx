@@ -4,7 +4,6 @@ import { TypeAnimation } from "react-type-animation";
 
 import { FunctionComponent, useEffect, useState } from "react";
 import "./index.css";
-const sequence = [0, 2000, 3000];
 
 const MainPage: FunctionComponent = () => {
     const [greetings, setGreetings] = useState(false);
