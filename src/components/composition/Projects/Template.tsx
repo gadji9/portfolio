@@ -22,7 +22,6 @@ const Template: FunctionComponent<ITemplateProps> = ({
     effectsImg,
     Preview,
     link,
-    size,
 }) => {
     const [startAnimation, setStartAnimation] = useState(false);
 
