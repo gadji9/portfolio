@@ -22,7 +22,7 @@ const MainPage: FunctionComponent = () => {
 
     return (
         <>
-            <div className="size-to-end flex lg:flex-row flex-col justify-between items-center ">
+            <div className="size-to-end flex lg:flex-row flex-col justify-between items-center ignore-padding lg xl">
                 <div className="2xl:max-w-[600px] lg:max-w-[350px] max-w-[600px] h-full flex flex-col justify-center ">
                     <div className="whitespace-nowrap">
                         {greetings && (
@@ -69,7 +69,7 @@ const MainPage: FunctionComponent = () => {
                         </span>
                     </div>
                 </div>
-                <div className="lg:w-3/5 h-full flex justify-between eyebox">
+                <div className="lg:w-3/5 h-full flex justify-between w-full">
                     <GradientBoxes />
                     <div className="2xl:w-full w-full h-full p-4 ">
                         <div className="w-full h-full rounded-2xl bg-zinc-900 flex justify-center items-center lg:pb-28 pb-14">

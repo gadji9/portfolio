@@ -1,9 +1,2 @@
 
 
-@media (max-width: 1280px) {
-    .eyebox {
-        width: calc(100% + 7rem); 
-        margin-left: -3.5px;
-    }
-  }
-

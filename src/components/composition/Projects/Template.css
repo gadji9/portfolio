@@ -5,9 +5,8 @@
     justify-content: space-between;
     align-items: flex-end;
     
-    gap: 100px;
+    gap: 20px;
     border-radius: 64px;
-    max-height: 550px;
     padding: 42px;
     position: relative;
     transition: all 1s;
@@ -62,7 +61,7 @@
  }
 
  .full {
-    width: 100%;
+    width: 100vw;
  }
  .half {
     width: 45vw;

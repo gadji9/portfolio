@@ -34,7 +34,7 @@ const Template: FunctionComponent<ITemplateProps> = ({
 
     return (
         <div
-            className={"project-box " + size}
+            className={"project-box "}
             onClick={handleClick}
             onMouseEnter={() => setStartAnimation(true)}
             onMouseLeave={() => setStartAnimation(false)}

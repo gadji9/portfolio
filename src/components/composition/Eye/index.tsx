@@ -22,6 +22,9 @@ const Eye: FunctionComponent<IEyeProps> = () => {
         if (!eyeBallRef.current) {
             return;
         }
+
+        const isDesktopDevice = event instanceof MouseEvent;
+
         const eyeX =
             eyeBallRef.current.getBoundingClientRect?.().left +
             eyeBallRef.current.clientWidth / 2;
@@ -32,7 +35,7 @@ const Eye: FunctionComponent<IEyeProps> = () => {
 
         let x;
         let y;
-        if (event instanceof MouseEvent) {
+        if (isDesktopDevice) {
             x = event.clientX;
             y = event.clientY;
         } else {
@@ -40,7 +43,8 @@ const Eye: FunctionComponent<IEyeProps> = () => {
             y = event.touches[0]?.clientY;
         }
         const radian = Math.atan2(x - eyeX, y - eyeY);
-        const rotationDegrees = radian * (180 / Math.PI) * -1 + 180;
+        const rotationDegrees =
+            radian * (180 / Math.PI) * -1 + (isDesktopDevice ? 140 : 170);
         eyeBallRef.current.style.transform =
             "rotate(" + rotationDegrees.toString() + "deg)";
     };
