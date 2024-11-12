@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Avatar from "@/assets/brown-avatar.png";
+import Avatar from "@/assets/avatar.jpg";
 import "./index.css";
 
 interface AaboutPropsPage {
@@ -14,10 +14,13 @@ const AboutPage: FunctionComponent<AaboutPropsPage> = () => {
             </h1>
             <div className="w-full flex flex-col lg:flex-row justify-around items-center lg:mt-20 my-5">
                 <div>
+                    <span className="text-white text-body -rotate-45 inline-block -translate-x-8 translate-y-8">
+                        It`s me ;)
+                    </span>
                     <img
                         className="rounded-t-[10rem] rounded-b-2xl"
                         src={Avatar}
-                        alt=""
+                        alt="avatar"
                         width={400}
                     />
                 </div>
@@ -31,7 +34,7 @@ const AboutPage: FunctionComponent<AaboutPropsPage> = () => {
                 <span className="text-[#adc6bd] text-body lg:leading-8 leading-6">
                     I live in the Republic of Dagestan.
                     <br />
-                    Started programming at the age of 14. I loved to play games,
+                    Started programming at the age of 13. I loved to play games,
                     so i decided to become a game developer. Started with c#.
                     <br />
                     From video tutorials on the Internet, I learned enough
@@ -44,7 +47,7 @@ const AboutPage: FunctionComponent<AaboutPropsPage> = () => {
                     found a vacancy in a nearby city in Vue JS.
                     <br />
                     Therefore, I diligently began to study html css js.
-                    Unfortunately, this job was not successful.
+                    Unfortunately, I was not hired because of my age.
                     <br />
                     Within six months of studying, I was hired by spichka dev as
                     a backend developer. I got my second wind.
@@ -53,8 +56,8 @@ const AboutPage: FunctionComponent<AaboutPropsPage> = () => {
                     colleagues, so in another half a year I became a full stack.
                     Since the tasks on the backend are over, I asked them to
                     give me tasks on the front. So I started my dive into React
-                    JS. Since then, namely 2 years, I have been studying it and
-                    trying to get better and better.
+                    JS. Since then (4 years), I have been studying it and trying
+                    to get better and better.
                     <br />
                     <br />
                     English level - "B2" Also studied on my own.

@@ -7,6 +7,7 @@ import Karjewy from "./Karjewy";
 import KarjewyAdmin from "./KarjewyAdmin";
 import Splover from "./Splover";
 import SploverAdmin from "./SploverAdmin";
+import Docs from "./Docs";
 
 const Projects: FunctionComponent = () => {
     return (
@@ -35,6 +36,16 @@ const Projects: FunctionComponent = () => {
                 </h3>
                 <div className="text-body text-white lg:mb-24 mb-10 w-full text-center leading-8">
                     These are interesting projects that I`ve made on order
+                </div>
+                <div className="w-full flex flex-col lg:flex-row justify-between lg:margin-0 mb-10 2xl:gap-40 lg:gap-20 lg:mt-20 ">
+                    <div className="lg:w-1/2 w-full">
+                        <Docs />
+                    </div>
+                    <p className="w-1/2 lg:flex text-white 2xl:text-4xl text-2xl  hidden items-center">
+                        Electronic document management service with contractors.
+                        It works both from 1C and in the web cabinet format in
+                        your browser. Getting documents is free!
+                    </p>
                 </div>
                 <div className="w-full flex flex-col lg:flex-row justify-between  2xl:gap-40 gap-10 lg:gap-20 lg:mt-20 ">
                     <Splover />

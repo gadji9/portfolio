@@ -5,7 +5,7 @@ import LinkedInImg from "@/assets/linkedin.png";
 
 const Header: FunctionComponent = () => {
     return (
-        <div className="ignore-padding xl:px-xlPagePaddingX lg:px-lgPagePaddingX  w-full flex justify-between items-center">
+        <nav className="ignore-padding xl:px-xlPagePaddingX lg:px-lgPagePaddingX  w-full flex justify-between items-center">
             <div className="w-[30%] text-xl flex gap-10">
                 <AppLink title="Work" href="/" inNewTab={false} />
                 <AppLink title="About" href="/About" inNewTab={false} />
@@ -13,7 +13,7 @@ const Header: FunctionComponent = () => {
 
             <div className="text-xl text-white flex lg:gap-8 gap-5 ">
                 <AppLink
-                    href="https://t.me/gadjife"
+                    href="https://t.me/leslie_gilliams"
                     title={
                         <img className="invert" src={TGImg} alt="" width={30} />
                     }
@@ -30,7 +30,7 @@ const Header: FunctionComponent = () => {
                     href="https://www.linkedin.com/in/gadjife/"
                 />
             </div>
-        </div>
+        </nav>
     );
 };
 interface INavLinkProps {

@@ -32,7 +32,7 @@ const Template: FunctionComponent<ITemplateProps> = ({
     };
 
     return (
-        <div
+        <button
             className={"project-box "}
             onClick={handleClick}
             onMouseEnter={() => setStartAnimation(true)}
@@ -50,9 +50,9 @@ const Template: FunctionComponent<ITemplateProps> = ({
                 </div>
             </Tooltip>
             <div className="project-preview">
-                {<Preview startAnimation={startAnimation} />}
+                <Preview startAnimation={startAnimation} />
             </div>
-        </div>
+        </button>
     );
 };
 
