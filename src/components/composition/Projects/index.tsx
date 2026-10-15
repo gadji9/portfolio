@@ -8,34 +8,22 @@ import KarjewyAdmin from "./KarjewyAdmin";
 import Splover from "./Splover";
 import SploverAdmin from "./SploverAdmin";
 import Docs from "./Docs";
+import PvzPortal from "./PvzPortal";
+import OmniPortal from "./OmniPortal";
 
 const Projects: FunctionComponent = () => {
     return (
         <div className="w-full">
-            <div>
-                <h3 className="w-full text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-amber-500 to-rose-600 w-fit pb-2 2xl:text-7xl text-4xl lg:my-10">
-                    Pet
-                </h3>
-                <div className="text-body text-white lg:mb-24 mb-10 w-full text-center leading-8">
-                    These are interesting projects that come to my mind, or for
-                    practicing new technologies.
-                </div>
-                <div className="w-full flex flex-col lg:flex-row justify-between 2xl:gap-40 lg:gap-20 gap-10 mt-5 lg:mt-10">
-                    <CatTrap />
-                    <Trello />
-                </div>
-                <div className="w-full flex flex-col lg:flex-row justify-between 2xl:gap-40 gap-20 mt-10 lg:mt-20">
-                    <Rinja />
-                    <HackerSM />
-                </div>
-            </div>
-
             <div className="py-10 mt-5 lg:mt-20 rounded-xl">
                 <h3 className="w-full text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-amber-500 to-rose-600 w-fit pb-2 2xl:text-7xl text-4xl  lg:mb-10">
                     Commercial
                 </h3>
                 <div className="text-body text-white lg:mb-24 mb-10 w-full text-center leading-8">
                     These are interesting projects that I`ve made on order
+                </div>
+                <div className="w-full flex flex-col lg:flex-row justify-between 2xl:gap-40 lg:gap-20 gap-10">
+                    <PvzPortal />
+                    <OmniPortal />
                 </div>
                 <div className="w-full flex flex-col lg:flex-row justify-between lg:margin-0 mb-10 2xl:gap-40 lg:gap-20 lg:mt-20 ">
                     <div className="lg:w-1/2 w-full">
@@ -54,6 +42,24 @@ const Projects: FunctionComponent = () => {
                 <div className="w-full flex flex-col lg:flex-row justify-between  2xl:gap-40 gap-10 lg:gap-20 mt-10 lg:mt-10 ">
                     <Karjewy />
                     <KarjewyAdmin />
+                </div>
+            </div>
+
+            <div>
+                <h3 className="w-full text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-amber-500 to-rose-600 w-fit pb-2 2xl:text-7xl text-4xl lg:my-10">
+                    Pet
+                </h3>
+                <div className="text-body text-white lg:mb-24 mb-10 w-full text-center leading-8">
+                    These are interesting projects that come to my mind, or for
+                    practicing new technologies.
+                </div>
+                <div className="w-full flex flex-col lg:flex-row justify-between 2xl:gap-40 lg:gap-20 gap-10 mt-5 lg:mt-10">
+                    <CatTrap />
+                    <Trello />
+                </div>
+                <div className="w-full flex flex-col lg:flex-row justify-between 2xl:gap-40 gap-20 mt-10 lg:mt-20">
+                    <Rinja />
+                    <HackerSM />
                 </div>
             </div>
         </div>

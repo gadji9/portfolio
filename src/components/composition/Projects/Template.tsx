@@ -4,7 +4,7 @@ import Tooltip from "../ToolTip";
 import "./Template.css";
 
 interface ITemplateProps {
-    technologies: string;
+    technologies?: string;
     name: string;
     description?: string;
     effectsImg: string;
@@ -31,6 +31,15 @@ const Template: FunctionComponent<ITemplateProps> = ({
         }
     };
 
+    const projectTitle = (
+        <div className="project-title">
+            <div className="project-title__technologies">
+                {description}
+            </div>
+            <div className="project-title__name">{name}</div>
+        </div>
+    );
+
     return (
         <button
             className={"project-box "}
@@ -41,14 +50,13 @@ const Template: FunctionComponent<ITemplateProps> = ({
             <div className="project-appear-icons hidden lg:block">
                 <img src={effectsImg} alt="asd" />
             </div>
-            <Tooltip title={technologies} position="top">
-                <div className="project-title">
-                    <div className="project-title__technologies">
-                        {description}
-                    </div>
-                    <div className="project-title__name">{name}</div>
-                </div>
-            </Tooltip>
+            {technologies ? (
+                <Tooltip title={technologies} position="top">
+                    {projectTitle}
+                </Tooltip>
+            ) : (
+                projectTitle
+            )}
             <div className="project-preview">
                 <Preview startAnimation={startAnimation} />
             </div>
