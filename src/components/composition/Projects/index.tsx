@@ -25,7 +25,7 @@ const Projects: FunctionComponent = () => {
                     <PvzPortal />
                     <OmniPortal />
                 </div>
-                <div className="w-full flex flex-col lg:flex-row justify-between lg:margin-0 mb-10 2xl:gap-40 lg:gap-20 lg:mt-20 ">
+                <div className="w-full flex flex-col lg:flex-row justify-between lg:margin-0 mb-10 2xl:gap-40 lg:gap-20 mt-10 lg:mt-20 ">
                     <div className="lg:w-1/2 w-full">
                         <Docs />
                     </div>
