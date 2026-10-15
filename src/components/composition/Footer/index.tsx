@@ -33,8 +33,8 @@ const Footer: FunctionComponent = () => {
                     <li className="text-amber-600 font-bold">Contact</li>
                     <li className="text-white">
                         <AppLink
-                            title="tg: @gadjife"
-                            href="https://t.me/gadjife"
+                            title="tg: @leslie_gilliams"
+                            href="https://t.me/leslie_gilliams"
                         />
                     </li>
                     <li className="text-white">
