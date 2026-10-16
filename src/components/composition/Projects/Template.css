@@ -11,6 +11,7 @@
     position: relative;
     transition: all 1s;
     width: 100%;
+    min-width: 0;
     cursor: pointer;
 }
 
