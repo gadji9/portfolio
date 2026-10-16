@@ -1,6 +1,9 @@
 .skeleton-image {
     position: relative;
-    display: inline-block;
+    /* block + fit-content mirrors how Tailwind preflight lays out plain <img>
+       (display: block), so surrounding inline content keeps its old position */
+    display: block;
+    width: fit-content;
     line-height: 0;
 }
 
