@@ -25,7 +25,7 @@ const Footer: FunctionComponent = () => {
                     <li>
                         <AppLink
                             title="CV"
-                            href="https://drive.google.com/file/d/1clO-2G0fOHIIEQ5ojeyjaDnjyFvp693L/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1zonSv9r8-XLgJkGurAp7qcY7oLSPvy7d/view?usp=sharing"
                         />
                     </li>
                 </ul>
