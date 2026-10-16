@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import Template, { PreviewComponent } from "../Template";
+import SkeletonImage from "@/components/composition/SkeletonImage";
 import KarjewyAdminImg from "@/assets/karjewy-admin.jpg";
 import AdminImg from "@/assets/admin.png";
 import { useTranslation } from "@/i18n";
@@ -26,11 +27,13 @@ const KarjewyAdmin: FunctionComponent = () => {
 
 const KarjewyAdminPreview: PreviewComponent = ({ startAnimation }) => {
     return (
-        <img
+        <SkeletonImage
             className={`karjewy-admin-preview-image  ${
                 startAnimation ? "move" : ""
             }`}
             src={KarjewyAdminImg}
+            ratio="1280 / 870"
+            skeletonClassName="rounded-[2vw]"
         />
     );
 };

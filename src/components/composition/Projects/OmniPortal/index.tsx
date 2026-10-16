@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import Template, { PreviewComponent } from "../Template";
+import SkeletonImage from "@/components/composition/SkeletonImage";
 import OmniPortalImg from "@/assets/omni-portal.png";
 import AdminImg from "@/assets/admin.png";
 import { useTranslation } from "@/i18n";
@@ -23,9 +24,13 @@ const OmniPortal: FunctionComponent = () => {
 
 const OmniPortalPreview: PreviewComponent = ({ startAnimation }) => {
     return (
-        <img
-            className={`omni-portal-preview-image  ${startAnimation ? "move" : ""}`}
+        <SkeletonImage
+            className={`omni-portal-preview-image  ${
+                startAnimation ? "move" : ""
+            }`}
             src={OmniPortalImg}
+            ratio="1916 / 985"
+            skeletonClassName="rounded-[2vw]"
         />
     );
 };

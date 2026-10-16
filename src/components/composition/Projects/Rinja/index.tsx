@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import Template, { PreviewComponent } from "../Template";
+import SkeletonImage from "@/components/composition/SkeletonImage";
 import RinjaImg from "@/assets/rinja.jpg";
 import GooglePlay from "@/assets/google-play.png";
 import { useTranslation } from "@/i18n";
@@ -29,9 +30,11 @@ const Rinja: FunctionComponent = () => {
 
 const RinjaPreview: PreviewComponent = ({ startAnimation }) => {
     return (
-        <img
+        <SkeletonImage
             className={`rinja-preview-image  ${startAnimation ? "move" : ""}`}
             src={RinjaImg}
+            ratio="1280 / 576"
+            skeletonClassName="rounded-[2vw]"
         />
     );
 };

@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import Template, { PreviewComponent } from "../Template";
+import SkeletonImage from "@/components/composition/SkeletonImage";
 import CatTrapImage from "@/assets/cattrap.png";
 import CatImage from "@/assets/cat.png";
 import { useTranslation } from "@/i18n";
@@ -28,9 +29,11 @@ const CatTrap: FunctionComponent = () => {
 
 const CatTrapPreview: PreviewComponent = ({ startAnimation }) => {
     return (
-        <img
+        <SkeletonImage
             className={`cattrap-preview-image  ${startAnimation ? "move" : ""}`}
             src={CatTrapImage}
+            ratio="685 / 701"
+            skeletonClassName="rounded-[2vw]"
         />
     );
 };

@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import Template, { PreviewComponent } from "../Template";
+import SkeletonImage from "@/components/composition/SkeletonImage";
 import DocsImg from "@/assets/Docs.png";
 import Documents from "@/assets/Documents.png";
 import { useTranslation } from "@/i18n";
@@ -28,9 +29,11 @@ const Docs: FunctionComponent = () => {
 
 const DocsPreview: PreviewComponent = ({ startAnimation }) => {
     return (
-        <img
+        <SkeletonImage
             className={`docs-preview-image  ${startAnimation ? "move" : ""}`}
             src={DocsImg}
+            ratio="1889 / 919"
+            skeletonClassName="rounded-[2vw]"
         />
     );
 };

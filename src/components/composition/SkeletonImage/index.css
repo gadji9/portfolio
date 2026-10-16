@@ -1,0 +1,40 @@
+.skeleton-image {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+}
+
+.skeleton-image__shimmer {
+    position: absolute;
+    inset: 0;
+    background-color: #201e19;
+    background-image: linear-gradient(
+        100deg,
+        rgba(255, 255, 255, 0) 40%,
+        rgba(255, 255, 255, 0.08) 50%,
+        rgba(255, 255, 255, 0) 60%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-shimmer 1.6s linear infinite;
+}
+
+.skeleton-image_loaded .skeleton-image__shimmer {
+    display: none;
+}
+
+.skeleton-image__img {
+    opacity: 0;
+}
+
+.skeleton-image_loaded .skeleton-image__img {
+    opacity: 1;
+}
+
+@keyframes skeleton-shimmer {
+    from {
+        background-position: 200% 0;
+    }
+    to {
+        background-position: -200% 0;
+    }
+}

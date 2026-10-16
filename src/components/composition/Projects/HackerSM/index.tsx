@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import Template, { PreviewComponent } from "../Template";
+import SkeletonImage from "@/components/composition/SkeletonImage";
 import SocialMedia from "@/assets/social-media.png";
 import SocialMediaActions from "@/assets/social-media-actions.png";
 import { useTranslation } from "@/i18n";
@@ -26,11 +27,13 @@ const HackerSM: FunctionComponent = () => {
 
 const HackerSMPreview: PreviewComponent = ({ startAnimation }) => {
     return (
-        <img
+        <SkeletonImage
             className={`hackersm-preview-image  ${
                 startAnimation ? "move" : ""
             }`}
             src={SocialMedia}
+            ratio="1242 / 562"
+            skeletonClassName="rounded-[2vw]"
         />
     );
 };

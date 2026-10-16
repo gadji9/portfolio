@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import Template, { PreviewComponent } from "../Template";
+import SkeletonImage from "@/components/composition/SkeletonImage";
 import KarjewyImg from "@/assets/karjewy.jpg";
 import DiamondRing from "@/assets/diamond-ring.png";
 import { useTranslation } from "@/i18n";
@@ -28,9 +29,11 @@ const Karjewy: FunctionComponent = () => {
 
 const KarjewyPreview: PreviewComponent = ({ startAnimation }) => {
     return (
-        <img
+        <SkeletonImage
             className={`karjewy-preview-image  ${startAnimation ? "move" : ""}`}
             src={KarjewyImg}
+            ratio="1357 / 930"
+            skeletonClassName="rounded-[2vw]"
         />
     );
 };

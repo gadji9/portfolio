@@ -1,4 +1,5 @@
 import { Fragment, FunctionComponent } from "react";
+import SkeletonImage from "@/components/composition/SkeletonImage";
 import Avatar from "@/assets/avatar.jpg";
 import { useTranslation } from "@/i18n";
 import "./index.css";
@@ -21,10 +22,12 @@ const AboutPage: FunctionComponent<AaboutPropsPage> = () => {
                     <span className="text-white text-body -rotate-45 inline-block -translate-x-8 translate-y-8">
                         {about.itsMe}
                     </span>
-                    <img
-                        className="rounded-t-[10rem] rounded-b-2xl"
+                    <SkeletonImage
+                        className="rounded-t-[10rem] rounded-b-2xl transition-opacity duration-700"
+                        skeletonClassName="rounded-t-[10rem] rounded-b-2xl"
                         src={Avatar}
                         alt="avatar"
+                        ratio="720 / 853"
                         width={400}
                     />
                 </div>
