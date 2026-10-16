@@ -2,15 +2,17 @@ import { FunctionComponent, useEffect, useRef } from "react";
 import Template, { PreviewComponent } from "../Template";
 import TaskIamge from "@/assets/task.png";
 import trelloPreviewVideo from "@/assets/trello-preview.mp4";
+import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
 const technologies = "React, OOP";
-const name = "Trello";
-const description = "Trello copy with drag and drop";
 const link = "https://gadji9.github.io/Trello-clone-jest-class-implementation/";
 
 const Trello: FunctionComponent = () => {
+    const { strings } = useTranslation();
+    const { name, description } = strings.projects.trello;
+
     return (
         <Template
             technologies={technologies}

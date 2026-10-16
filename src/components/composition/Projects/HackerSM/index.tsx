@@ -2,14 +2,16 @@ import { FunctionComponent } from "react";
 import Template, { PreviewComponent } from "../Template";
 import SocialMedia from "@/assets/social-media.png";
 import SocialMediaActions from "@/assets/social-media-actions.png";
+import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
 const technologies = "React, React Query, Jest ,RTL, Redux-toolkit, webpack";
-const name = "Social Media";
-const description = "(Comming Soon)";
 
 const HackerSM: FunctionComponent = () => {
+    const { strings } = useTranslation();
+    const { name, description } = strings.projects.hackerSM;
+
     return (
         <Template
             technologies={technologies}

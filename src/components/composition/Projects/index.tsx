@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import { useTranslation } from "@/i18n";
 import CatTrap from "./CatTrap";
 import HackerSM from "./HackerSM";
 import Trello from "./Trello";
@@ -12,14 +13,17 @@ import PvzPortal from "./PvzPortal";
 import OmniPortal from "./OmniPortal";
 
 const Projects: FunctionComponent = () => {
+    const { strings } = useTranslation();
+    const { projects } = strings;
+
     return (
         <div className="w-full">
             <div className="py-10 mt-5 lg:mt-20 rounded-xl">
                 <h3 className="w-full text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-amber-500 to-rose-600 w-fit pb-2 2xl:text-7xl text-4xl  lg:mb-10">
-                    Commercial
+                    {projects.commercial}
                 </h3>
                 <div className="text-body text-white lg:mb-24 mb-10 w-full text-center leading-8">
-                    These are interesting projects that I`ve made on order
+                    {projects.commercialSubtitle}
                 </div>
                 <div className="w-full flex flex-col lg:flex-row justify-between 2xl:gap-40 lg:gap-20 gap-10">
                     <PvzPortal />
@@ -30,9 +34,7 @@ const Projects: FunctionComponent = () => {
                         <Docs />
                     </div>
                     <p className="w-1/2 lg:flex text-white 2xl:text-4xl text-2xl  hidden items-center">
-                        Electronic document management service with contractors.
-                        It works both from 1C and in the web cabinet format in
-                        your browser. Getting documents is free!
+                        {projects.docsParagraph}
                     </p>
                 </div>
                 <div className="w-full flex flex-col lg:flex-row justify-between  2xl:gap-40 gap-10 lg:gap-20 lg:mt-20 ">
@@ -47,11 +49,10 @@ const Projects: FunctionComponent = () => {
 
             <div>
                 <h3 className="w-full text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-amber-500 to-rose-600 w-fit pb-2 2xl:text-7xl text-4xl lg:my-10">
-                    Pet
+                    {projects.pet}
                 </h3>
                 <div className="text-body text-white lg:mb-24 mb-10 w-full text-center leading-8">
-                    These are interesting projects that come to my mind, or for
-                    practicing new technologies.
+                    {projects.petSubtitle}
                 </div>
                 <div className="w-full flex flex-col lg:flex-row justify-between 2xl:gap-40 lg:gap-20 gap-10 mt-5 lg:mt-10">
                     <CatTrap />

@@ -2,13 +2,14 @@ import { FunctionComponent } from "react";
 import Template, { PreviewComponent } from "../Template";
 import OmniPortalImg from "@/assets/omni-portal.png";
 import AdminImg from "@/assets/admin.png";
+import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
-const name = "Omni portal";
-const description = "Admin panel for FivePost network employees";
-
 const OmniPortal: FunctionComponent = () => {
+    const { strings } = useTranslation();
+    const { name, description } = strings.projects.omni;
+
     return (
         <Template
             name={name}

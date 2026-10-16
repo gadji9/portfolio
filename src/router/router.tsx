@@ -1,4 +1,5 @@
 import DefaultLayout from "@layouts/DefaultLayout";
+import { LanguageProvider } from "@/i18n";
 import { Suspense, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -17,21 +18,23 @@ function Router() {
     return (
         <>
             <BrowserRouter basename={basename}>
-                <DefaultLayout>
-                    <Routes>
-                        {Views.map((view) => (
-                            <Route
-                                key={view.path}
-                                path={view.path}
-                                element={
-                                    <Suspense fallback={<div>...</div>}>
-                                        <view.element />
-                                    </Suspense>
-                                }
-                            />
-                        ))}
-                    </Routes>
-                </DefaultLayout>
+                <LanguageProvider>
+                    <DefaultLayout>
+                        <Routes>
+                            {Views.map((view) => (
+                                <Route
+                                    key={view.path}
+                                    path={view.path}
+                                    element={
+                                        <Suspense fallback={<div>...</div>}>
+                                            <view.element />
+                                        </Suspense>
+                                    }
+                                />
+                            ))}
+                        </Routes>
+                    </DefaultLayout>
+                </LanguageProvider>
             </BrowserRouter>
         </>
     );

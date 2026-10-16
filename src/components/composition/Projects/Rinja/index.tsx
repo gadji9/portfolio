@@ -2,16 +2,18 @@ import { FunctionComponent } from "react";
 import Template, { PreviewComponent } from "../Template";
 import RinjaImg from "@/assets/rinja.jpg";
 import GooglePlay from "@/assets/google-play.png";
+import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
 const technologies = "C#, Unity";
-const name = "Rinja game";
-const description = "Arcade 2d runner";
 const link =
     "https://play.google.com/store/apps/details?id=com.Pilchareinc.Rinja&hl=ru&gl=US";
 
 const Rinja: FunctionComponent = () => {
+    const { strings } = useTranslation();
+    const { name, description } = strings.projects.rinja;
+
     return (
         <Template
             technologies={technologies}

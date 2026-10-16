@@ -2,14 +2,16 @@ import { FunctionComponent } from "react";
 import Template, { PreviewComponent } from "../Template";
 import KarjewyAdminImg from "@/assets/karjewy-admin.jpg";
 import AdminImg from "@/assets/admin.png";
+import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
 const technologies = "Vue, vuex";
-const name = "Karjewy admin";
-const description = "Admin panel for karjewy";
 
 const KarjewyAdmin: FunctionComponent = () => {
+    const { strings } = useTranslation();
+    const { name, description } = strings.projects.karjewyAdmin;
+
     return (
         <Template
             technologies={technologies}

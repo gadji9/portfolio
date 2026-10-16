@@ -2,13 +2,14 @@ import { FunctionComponent } from "react";
 import Template, { PreviewComponent } from "../Template";
 import PvzPortalImg from "@/assets/pvz-portal.png";
 import Task from "@/assets/task.png";
+import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
-const name = "Pvz portal";
-const description = "Application for receiving and issuing orders";
-
 const PvzPortal: FunctionComponent = () => {
+    const { strings } = useTranslation();
+    const { name, description } = strings.projects.pvz;
+
     return (
         <Template
             name={name}

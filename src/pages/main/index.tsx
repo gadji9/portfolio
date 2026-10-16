@@ -1,11 +1,13 @@
 import Projects from "@/components/composition/Projects";
 import Eye from "@components/composition/Eye";
 import { TypeAnimation } from "react-type-animation";
+import { useTranslation } from "@/i18n";
 
 import { FunctionComponent, useEffect, useState } from "react";
 import "./index.css";
 
 const MainPage: FunctionComponent = () => {
+    const { lang, strings } = useTranslation();
     const [greetings, setGreetings] = useState(false);
     const [introduce, setIntroduce] = useState(false);
     const [description, setDescription] = useState(false);
@@ -28,11 +30,12 @@ const MainPage: FunctionComponent = () => {
                         {greetings && (
                             <h1 className="font-extrabold text-transparent 2xl:text-6xl lg:text-4xl text-h2 bg-clip-text bg-gradient-to-r from-amber-500 to-rose-600 w-fit pb-2">
                                 <TypeAnimation
+                                    key={`greeting-${lang}`}
                                     sequence={[
                                         300,
-                                        "Hi.",
-                                        1000, // wait 1s before replacing "Mice" with "Hamsters"
-                                        "Hi.I am Gadjimurad",
+                                        strings.main.hi,
+                                        1000,
+                                        strings.main.hiName,
                                     ]}
                                     wrapper="span"
                                     preRenderFirstString={false}
@@ -44,7 +47,8 @@ const MainPage: FunctionComponent = () => {
                         {introduce ? (
                             <h2 className="font-extrabold text-transparent 2xl:text-6xl lg:text-4xl text-h2 bg-clip-text bg-gradient-to-r from-amber-500 to-rose-600 w-fit">
                                 <TypeAnimation
-                                    sequence={[1000, "A FrontEnd Developer"]}
+                                    key={`role-${lang}`}
+                                    sequence={[1000, strings.main.role]}
                                     wrapper="span"
                                     preRenderFirstString={false}
                                     speed={50}
@@ -63,9 +67,7 @@ const MainPage: FunctionComponent = () => {
                                 transitionDuration: "1.5s",
                             }}
                         >
-                            I`m also a back-end developer and game developer.
-                            But, I develop front-end skills, because I think
-                            that this is my passion
+                            {strings.main.description}
                         </span>
                     </div>
                 </div>
