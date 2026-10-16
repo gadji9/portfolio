@@ -22,14 +22,14 @@ const ru = {
     main: {
         hi: "Привет.",
         hiName: "Привет. Я Гаджимурад",
-        role: "Фронтенд-разработчик",
+        role: "Web-разработчик",
         description:
             "Я также разрабатываю бэкенд и игры. Но прокачиваю фронтенд-навыки, потому что считаю, что это моё призвание",
     },
     about: {
         title: "Я Гаджимурад.",
         itsMe: "Это я ;)",
-        subtitle: "Я фронтенд-разработчик, работаю удалённо из Дагестана.",
+        subtitle: "Я Web-разработчик, работаю удалённо из Дагестана.",
         bio: [
             "Я живу в Республике Дагестан.",
             "Начал программировать в 13 лет. Я любил играть в игры, поэтому решил стать геймдевелопером. Начал с C#.",
@@ -131,14 +131,14 @@ const en: typeof ru = {
     main: {
         hi: "Hi.",
         hiName: "Hi.I am Gadjimurad",
-        role: "A FrontEnd Developer",
+        role: "A Web Developer",
         description:
             "I`m also a back-end developer and game developer. But, I develop front-end skills, because I think that this is my passion",
     },
     about: {
         title: "I`am Gadjimurad.",
         itsMe: "It`s me ;)",
-        subtitle: "I'm a Frontend Developer working remotely from Dagestan.",
+        subtitle: "I'm a Web Developer working remotely from Dagestan.",
         bio: [
             "I live in the Republic of Dagestan.",
             "Started programming at the age of 13. I loved to play games, so i decided to become a game developer. Started with c#.",
