@@ -4,6 +4,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Routes as Views } from "./routes";
 
+// GitHub Pages serves the site under /portfolio, Vercel serves it from the root
+const basename = window.location.pathname.startsWith("/portfolio")
+    ? "/portfolio"
+    : "/";
+
 function Router() {
     useEffect(() => {
         document.title = "Gadjimurad Sultanmagomedov";
@@ -11,7 +16,7 @@ function Router() {
 
     return (
         <>
-            <BrowserRouter>
+            <BrowserRouter basename={basename}>
                 <DefaultLayout>
                     <Routes>
                         {Views.map((view) => (
