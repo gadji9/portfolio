@@ -2,6 +2,7 @@ import { FunctionComponent } from "react";
 import Cat from "../Cat";
 import { AppLink } from "../Header";
 import { useTranslation } from "@/i18n";
+import { cvUrl } from "@/utils/publicUrl";
 import "./index.css";
 
 const Footer: FunctionComponent = () => {
@@ -28,10 +29,9 @@ const Footer: FunctionComponent = () => {
                         />
                     </li>
                     <li>
-                        <AppLink
-                            title="CV"
-                            href="https://drive.google.com/file/d/1zonSv9r8-XLgJkGurAp7qcY7oLSPvy7d/view?usp=sharing"
-                        />
+                        <a href={cvUrl} download className="text-xl text-white">
+                            CV
+                        </a>
                     </li>
                 </ul>
                 <ul className="leading-10">
@@ -46,8 +46,8 @@ const Footer: FunctionComponent = () => {
                     </li>
                     <li className="text-white">
                         <AppLink
-                            title="gm_061@bk.ru"
-                            href="mailto:gm_061@bk.ru"
+                            title="gm_062@bk.ru"
+                            href="mailto:gm_062@bk.ru"
                         />
                     </li>
                 </ul>

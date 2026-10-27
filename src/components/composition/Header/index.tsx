@@ -8,8 +8,8 @@ const Header: FunctionComponent = () => {
     const { lang, toggleLang, strings } = useTranslation();
 
     return (
-        <nav className="ignore-padding xl:px-xlPagePaddingX lg:px-lgPagePaddingX  w-full flex justify-between items-center">
-            <div className="w-[30%] text-xl flex gap-10">
+        <nav className="ignore-padding xl:px-xlPagePaddingX lg:px-lgPagePaddingX w-full flex justify-between items-center">
+            <div className="text-lg lg:text-xl flex gap-6 lg:gap-10 whitespace-nowrap">
                 <AppLink
                     title={strings.header.work}
                     href="/"
@@ -22,7 +22,7 @@ const Header: FunctionComponent = () => {
                 />
             </div>
 
-            <div className="text-xl text-white flex items-center lg:gap-8 gap-5 ">
+            <div className="text-lg lg:text-xl text-white flex items-center lg:gap-8 gap-4 ">
                 <button
                     type="button"
                     onClick={toggleLang}
@@ -76,7 +76,7 @@ export const AppLink: FunctionComponent<INavLinkProps> = ({
         <>
             <Link
                 to={href}
-                className="text-xl text-white"
+                className="text-lg lg:text-xl text-white whitespace-nowrap"
                 {...(inNewTab ? { target: "_blank" } : {})}
             >
                 {title}

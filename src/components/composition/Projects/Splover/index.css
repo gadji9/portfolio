@@ -2,7 +2,7 @@
 
 
 .splover-preview-image {
-    transition: all 1s;
+    transition: transform 0.3s ease;
     width: 35vw;
     height: 17vw;
     max-width: none;

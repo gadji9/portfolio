@@ -7,7 +7,7 @@ import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
-const technologies = "React, OOP";
+const technologies = ["React", "OOP"];
 const link = "https://gadji9.github.io/react_cat_trap_class_implementation/";
 
 const CatTrap: FunctionComponent = () => {
@@ -20,7 +20,6 @@ const CatTrap: FunctionComponent = () => {
             name={name}
             effectsImg={CatImage}
             Preview={CatTrapPreview}
-            size="shrink"
             description={description}
             link={link}
         />

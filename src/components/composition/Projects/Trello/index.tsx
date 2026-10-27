@@ -6,7 +6,7 @@ import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
-const technologies = "React, OOP";
+const technologies = ["React", "OOP", "Jest"];
 const link = "https://gadji9.github.io/Trello-clone-jest-class-implementation/";
 
 const Trello: FunctionComponent = () => {
@@ -19,7 +19,6 @@ const Trello: FunctionComponent = () => {
             name={name}
             effectsImg={TaskIamge}
             Preview={PreviewVideo}
-            size="full"
             link={link}
             description={description}
         />

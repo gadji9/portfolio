@@ -7,6 +7,15 @@ import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
+const technologies = [
+    "React",
+    "TypeScript",
+    "styled-components",
+    "Redux",
+    "Redux Toolkit",
+    "Axios",
+];
+
 const OmniPortal: FunctionComponent = () => {
     const { strings } = useTranslation();
     const { name, description } = strings.projects.omni;
@@ -16,8 +25,9 @@ const OmniPortal: FunctionComponent = () => {
             name={name}
             effectsImg={AdminImg}
             Preview={OmniPortalPreview}
-            size="full"
+            technologies={technologies}
             description={description}
+            internal={strings.projects.internal}
         />
     );
 };

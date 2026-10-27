@@ -7,7 +7,7 @@ import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
-const technologies = "Vue, vuex, equiring";
+const technologies = ["React", "TypeScript", "Redux", "Tailwind + MUI", "Redux Toolkit"];
 
 const SploverAdmin: FunctionComponent = () => {
     const { strings } = useTranslation();
@@ -19,8 +19,8 @@ const SploverAdmin: FunctionComponent = () => {
             name={name}
             effectsImg={AdminImg}
             Preview={SploverAdminPreview}
-            size="half"
             description={description}
+            internal={strings.projects.internal}
         />
     );
 };

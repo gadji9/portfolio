@@ -7,7 +7,7 @@ import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
-const technologies = "React, React Query, Jest ,RTL, Redux-toolkit, webpack";
+const technologies = ["React", "React Query", "RTK", "Jest", "RTL", "Webpack"];
 
 const HackerSM: FunctionComponent = () => {
     const { strings } = useTranslation();
@@ -19,7 +19,6 @@ const HackerSM: FunctionComponent = () => {
             name={name}
             effectsImg={SocialMediaActions}
             Preview={HackerSMPreview}
-            size="half"
             description={description}
         />
     );

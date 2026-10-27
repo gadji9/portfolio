@@ -7,12 +7,12 @@ import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
-const technologies = "React 18, Graphql/Apollo, Mobx, Vitest, Webpack";
+const technologies = ["React", "TypeScript", "styled-components + MUI", "MobX", "GraphQL + Apollo"];
 const link = "https://doc.astral.ru/";
 
 const Docs: FunctionComponent = () => {
     const { strings } = useTranslation();
-    const { name, description } = strings.projects.docs;
+    const { name, description, result } = strings.projects.docs;
 
     return (
         <Template
@@ -20,8 +20,8 @@ const Docs: FunctionComponent = () => {
             name={name}
             effectsImg={Documents}
             Preview={DocsPreview}
-            size="shrink"
             description={description}
+            result={result}
             link={link}
         />
     );

@@ -52,7 +52,6 @@ body {
 	min-height: 100%;
 	width: 100%;
 	background-color: rgb(17,17,17);
-    -scrollbarBgColor: var(--c-dark);
     --scrollbarThumbColor: var(--c-accent);
 }
 #root {
@@ -97,15 +96,25 @@ table {
     --page-padding-x-md: 3.5rem;
 }
 
-:host ::ng-deep[title]:hover::after{
-    background-color: red !important;
-}
-
 @media (max-width: 1280px) {
     .size-to-end {
         height: calc(100svh - var(--navbar-height) - 6rem);
     }
-  }
+}
+
+@media (max-width: 1023px) {
+    /* nav keeps normal page padding on mobile; ignore-padding is for full-bleed blocks like the footer */
+    nav.ignore-padding {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    :root {
+        --page-padding-x-md: 1.25rem;
+    }
+}
 
 .ignore-padding {
     width: calc(100% + var(--page-padding-x-md) * 2); 

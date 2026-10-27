@@ -1,5 +1,5 @@
 .cattrap-preview-image {
-    transition: all 1s;
+    transition: transform 0.3s ease;
     width: 17vmax;
     height: 17vmax;
     max-width: none;

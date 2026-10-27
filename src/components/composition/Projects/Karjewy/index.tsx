@@ -7,12 +7,12 @@ import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
-const technologies = "React, tailwind, SSR, redux, redux-thunk";
+const technologies = ["React", "TypeScript", "Redux", "Tailwind + MUI", "Redux Toolkit"];
 const link = "https://karjewy.com/";
 
 const Karjewy: FunctionComponent = () => {
     const { strings } = useTranslation();
-    const { name, description } = strings.projects.karjewy;
+    const { name, description, result } = strings.projects.karjewy;
 
     return (
         <Template
@@ -20,8 +20,8 @@ const Karjewy: FunctionComponent = () => {
             name={name}
             effectsImg={DiamondRing}
             Preview={KarjewyPreview}
-            size="half"
             description={description}
+            result={result}
             link={link}
         />
     );

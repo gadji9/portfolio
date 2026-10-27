@@ -7,7 +7,7 @@ import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
-const technologies = "Vue, vuex";
+const technologies = ["React", "TypeScript", "Redux", "Tailwind + MUI", "Redux Toolkit"];
 
 const KarjewyAdmin: FunctionComponent = () => {
     const { strings } = useTranslation();
@@ -19,8 +19,8 @@ const KarjewyAdmin: FunctionComponent = () => {
             name={name}
             effectsImg={AdminImg}
             Preview={KarjewyAdminPreview}
-            size="half"
             description={description}
+            internal={strings.projects.internal}
         />
     );
 };

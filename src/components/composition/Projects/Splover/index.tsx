@@ -7,7 +7,7 @@ import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
-const technologies = "React, tailwind, mobx, equiring";
+const technologies = ["React", "TypeScript", "Redux", "Tailwind + MUI", "Redux Toolkit"];
 const link = "https://splover.ru/";
 
 const Splover: FunctionComponent = () => {
@@ -20,7 +20,6 @@ const Splover: FunctionComponent = () => {
             name={name}
             effectsImg={Dumbbell}
             Preview={SploverPreview}
-            size="full"
             description={description}
             link={link}
         />

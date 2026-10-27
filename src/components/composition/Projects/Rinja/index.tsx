@@ -7,7 +7,7 @@ import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
-const technologies = "C#, Unity";
+const technologies = ["C#", "Unity"];
 const link =
     "https://play.google.com/store/apps/details?id=com.Pilchareinc.Rinja&hl=ru&gl=US";
 
@@ -21,7 +21,6 @@ const Rinja: FunctionComponent = () => {
             name={name}
             effectsImg={GooglePlay}
             Preview={RinjaPreview}
-            size="half"
             link={link}
             description={description}
         />

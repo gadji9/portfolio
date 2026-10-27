@@ -55,11 +55,11 @@ const Projects: FunctionComponent = () => {
                     {projects.petSubtitle}
                 </div>
                 <div className="w-full flex flex-col lg:flex-row justify-between 2xl:gap-40 lg:gap-20 gap-10 mt-5 lg:mt-10">
-                    <CatTrap />
+                    <Rinja />
                     <Trello />
                 </div>
                 <div className="w-full flex flex-col lg:flex-row justify-between 2xl:gap-40 gap-20 mt-10 lg:mt-20">
-                    <Rinja />
+                    <CatTrap />
                     <HackerSM />
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import DefaultLayout from "@layouts/DefaultLayout";
 import { LanguageProvider } from "@/i18n";
-import { Suspense, useEffect } from "react";
+import { Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Routes as Views } from "./routes";
@@ -11,10 +11,6 @@ const basename = window.location.pathname.startsWith("/portfolio")
     : "/";
 
 function Router() {
-    useEffect(() => {
-        document.title = "Gadjimurad Sultanmagomedov";
-    }, []);
-
     return (
         <>
             <BrowserRouter basename={basename}>

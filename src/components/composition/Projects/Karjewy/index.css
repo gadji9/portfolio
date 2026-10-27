@@ -1,5 +1,5 @@
 .karjewy-preview-image {
-    transition: all 1s;
+    transition: transform 0.3s ease;
     width: 30vw;
     max-width: none;
     border-radius: 2vw;

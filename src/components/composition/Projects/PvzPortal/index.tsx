@@ -7,17 +7,21 @@ import { useTranslation } from "@/i18n";
 
 import "./index.css";
 
+const technologies = ["React", "TypeScript", "styled-components", "React Query"];
+
 const PvzPortal: FunctionComponent = () => {
     const { strings } = useTranslation();
-    const { name, description } = strings.projects.pvz;
+    const { name, description, result } = strings.projects.pvz;
 
     return (
         <Template
             name={name}
             effectsImg={Task}
             Preview={PvzPortalPreview}
-            size="full"
+            technologies={technologies}
             description={description}
+            result={result}
+            internal={strings.projects.internal}
         />
     );
 };

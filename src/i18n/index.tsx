@@ -11,6 +11,7 @@ import {
 export type Lang = "ru" | "en";
 
 const ru = {
+    metaTitle: "Гаджимурад Султанмагомедов — Fullstack / Frontend-разработчик",
     header: {
         work: "Работы",
         about: "Обо мне",
@@ -22,36 +23,118 @@ const ru = {
     main: {
         hi: "Привет.",
         hiName: "Привет. Я Гаджимурад",
-        role: "Web-разработчик",
+        role: "Fullstack-разработчик",
         description:
-            "Я также разрабатываю бэкенд и игры. Но прокачиваю фронтенд-навыки, потому что считаю, что это моё призвание",
+            "Создаю веб-продукты целиком — от архитектуры и фронтенда до бэкенда и деплоя. Основной стек — React и TypeScript.",
+        facts: [
+            "5 лет коммерческой разработки",
+            "Senior Frontend · X5 (5Post)",
+            "React · TypeScript · Node.js",
+        ],
+        cta: {
+            cv: "Скачать CV",
+            telegram: "Telegram",
+        },
     },
     about: {
-        title: "Я Гаджимурад.",
+        title: "Я Гаджимурад",
         itsMe: "Это я ;)",
-        subtitle: "Я Web-разработчик, работаю удалённо из Дагестана.",
+        subtitle: "Fullstack-разработчик",
+        stackTitle: "Технологии",
+        stack: [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "JavaScript",
+            "Redux Toolkit",
+            "Redux",
+            "MobX",
+            "React Query",
+            "GraphQL",
+            "Apollo",
+            "REST API",
+            "Node.js",
+            "Express",
+            "Nest.js",
+            "HTML5",
+            "CSS3",
+            "SCSS",
+            "Tailwind CSS",
+            "MUI",
+            "styled-components",
+            "Jest",
+            "React Testing Library",
+            "Vitest",
+            "Webpack",
+            "Vite",
+            "Git",
+            "Docker",
+            "CI/CD",
+            "WebSocket",
+        ],
         bio: [
             "Я живу в Республике Дагестан.",
             "Начал программировать в 13 лет. Я любил играть в игры, поэтому решил стать геймдевелопером. Начал с C#.",
             "По видеоурокам из интернета я получил достаточно знаний, чтобы создавать игры на Unity. Я с увлечением занимался этим делом и создавал игры одну за другой. Одну из них выложил в Google Play.",
             "В поисках возможности монетизировать свою деятельность я нашёл вакансию в соседнем городе — Vue JS.",
-            "Поэтому я усердно начал изучать html, css, js. К сожалению, меня не взяли из-за возраста.",
+            "Поэтому я усердно начал изучать HTML, CSS, JS. К сожалению, меня не взяли из-за возраста.",
             "Через полгода обучения меня взяли в spichka dev бэкенд-разработчиком. У меня открылось второе дыхание.",
-            "Мне очень понравилось учиться и общаться с коллегами, поэтому ещё через полгода я стал фулстеком. Так как задачи на бэкенде закончились, я попросил давать мне задачи по фронту. Так я начал своё погружение в React JS. С тех пор (4 года) я изучаю его и стараюсь становиться всё лучше и лучше.",
-            "Уровень английского — «B2». Тоже изучал самостоятельно.",
+            "Мне очень понравилось учиться и общаться с коллегами, поэтому ещё через полгода я стал фулстеком. Так как задачи на бэкенде закончились, я попросил давать мне задачи по фронту. Так я начал своё погружение в React JS. С тех пор я изучаю его и стараюсь становиться всё лучше и лучше.",
+            "Уровень английского — B2, тоже изучал самостоятельно.",
             "Я активно слежу за последними трендами и изменениями в IT, потому что эта сфера мне очень интересна, и я готов посвятить ей жизнь. Поэтому я ищу сильную команду, в которой смогу развиваться, узнавать новое и быть полезным.",
             "Если вам нужен мотивированный сотрудник, готовый развиваться и становиться лучше каждый день, — смело связывайтесь со мной, буду рад ответить ;)",
         ],
+        experience: {
+            title: "Опыт работы",
+            total: "5 лет",
+            jobs: [
+                {
+                    company: "X5 (5Post)",
+                    role: "Senior Frontend-разработчик",
+                    period: "Февраль 2025 — настоящее время",
+                    summary:
+                        "Веб-сервисы логистики и курьерской доставки 5Post: админ-панель, клиентский сайт, портал ПВЗ, внутренние сервисы.",
+                    achievements: [
+                        "Разработал с нуля React-приложение для сотрудников ПВЗ — используется во всех пунктах выдачи 5Post",
+                        "Внедрил ИИ в процесс разработки (ревью кода, ИИ-агенты) — скорость выпуска фич +120%",
+                        "Разработал и запустил дизайн-систему вместе с дизайнером — ускорил разработку зависимых приложений",
+                        "Настроил генерацию API-документации через конфигурацию сборки — ускорил разработку и тестирование",
+                    ],
+                },
+                {
+                    company: "АстралСофт",
+                    role: "Middle Frontend-разработчик",
+                    period: "Август 2023 — февраль 2025",
+                    summary:
+                        "Астрал ЭДО — сервис электронного документооборота (doc.astral.ru). React, GraphQL, code review, тесты, общая архитектура и npm-пакеты.",
+                    achievements: [
+                        "Устранил 400+ циклических зависимостей — потребление памяти −25%, написал CI против их повторного появления",
+                        "Оптимизировал рендер большого даталиста на 20%",
+                        "Нашёл уязвимость, приводившую к падению сервера, и способствовал её устранению",
+                    ],
+                },
+                {
+                    company: "Spichka",
+                    role: "Frontend-разработчик",
+                    period: "Ноябрь 2021 — июнь 2023",
+                    summary:
+                        "E-commerce проекты: маркетплейс Splover, интернет-магазин Karjewy и админ-панели к ним.",
+                    achievements: [
+                        "Ускорил загрузку каталогов Karjewy в 3 раза — с 2.3 с до 0.7 с (кеш, поиск бага ререндера, оптимизация изображений)",
+                    ],
+                },
+            ],
+        },
         hard: "Hard skills",
         hardSkills: [
-            "React, Next js",
-            "Redux, redux-toolkit ,Mobx",
-            "React query, Graphql, Apollo, RestApi",
-            "Jest, React-testing-library",
-            "HTML5, Css3, Scss, JavaScript, TypeScript",
-            "Node js, Express js, feathers js, Nest js",
-            "Sequelize, Docker",
-            "Webpack, Babel, Git",
+            "React, Next.js",
+            "Redux, Redux Toolkit, MobX",
+            "React Query, GraphQL, Apollo, REST API",
+            "Jest, React Testing Library, Vitest",
+            "HTML5, CSS3, SCSS, JavaScript, TypeScript",
+            "Node.js, Express, Nest.js",
+            "Docker, CI/CD",
+            "Webpack, Vite, Git",
             "Английский — B2",
         ],
         soft: "Soft skills",
@@ -66,7 +149,9 @@ const ru = {
     },
     projects: {
         commercial: "Коммерческие",
-        commercialSubtitle: "Интересные проекты, которые я делал на заказ",
+        commercialSubtitle:
+            "Проекты, которые я делал на заказ и в командах компаний",
+        internal: "Внутренний продукт",
         pet: "Пет-проекты",
         petSubtitle:
             "Проекты, которые пришли мне в голову или сделаны для практики новых технологий.",
@@ -74,15 +159,17 @@ const ru = {
             "Сервис электронного документооборота с контрагентами. Работает как через 1С, так и в формате веб-кабинета в вашем браузере. Получение документов — бесплатно!",
         pvz: {
             name: "Pvz portal",
-            description: "Приложение для получения и выдачи заказов",
+            description: "Портал приёма и выдачи заказов 5Post",
+            result: "Разработал с нуля — используется во всех ПВЗ сети",
         },
         omni: {
             name: "Omni portal",
-            description: "Админ-панель для сотрудников сети FivePost",
+            description: "Админ-панель: заказы, склады, бизнес-процессы 5Post",
         },
         docs: {
             name: "Docs",
             description: "Электронный документооборот",
+            result: "Убрал 400+ циклических зависимостей — память −25%",
         },
         splover: {
             name: "Splover",
@@ -95,6 +182,7 @@ const ru = {
         karjewy: {
             name: "Karjewy",
             description: "Интернет-магазин украшений",
+            result: "Каталог грузится в 3 раза быстрее — 2.3 с → 0.7 с",
         },
         karjewyAdmin: {
             name: "Karjewy admin",
@@ -110,16 +198,17 @@ const ru = {
         },
         rinja: {
             name: "Rinja game",
-            description: "Аркадный 2D-раннер",
+            description: "Аркадный 2D-раннер в Google Play",
         },
         hackerSM: {
             name: "Social Media",
-            description: "(Скоро)",
+            description: "Клон соцсети — в разработке",
         },
     },
 };
 
 const en: typeof ru = {
+    metaTitle: "Gadjimurad Sultanmagomedov — Full-Stack / Front-End Developer",
     header: {
         work: "Work",
         about: "About",
@@ -130,85 +219,171 @@ const en: typeof ru = {
     },
     main: {
         hi: "Hi.",
-        hiName: "Hi.I am Gadjimurad",
-        role: "A Web Developer",
+        hiName: "Hi. I'm Gadjimurad",
+        role: "Full-Stack Developer",
         description:
-            "I`m also a back-end developer and game developer. But, I develop front-end skills, because I think that this is my passion",
+            "I build web products end-to-end — from architecture and frontend to backend and deployment. My core stack is React and TypeScript.",
+        facts: [
+            "5 years of commercial experience",
+            "Senior Frontend at X5 (5Post)",
+            "React · TypeScript · Node.js",
+        ],
+        cta: {
+            cv: "Download CV",
+            telegram: "Telegram",
+        },
     },
     about: {
-        title: "I`am Gadjimurad.",
-        itsMe: "It`s me ;)",
-        subtitle: "I'm a Web Developer working remotely from Dagestan.",
+        title: "I'm Gadjimurad.",
+        itsMe: "It's me ;)",
+        subtitle: "I'm a full-stack developer working remotely from Dagestan.",
+        stackTitle: "Tech stack",
+        stack: [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "JavaScript",
+            "Redux Toolkit",
+            "Redux",
+            "MobX",
+            "React Query",
+            "GraphQL",
+            "Apollo",
+            "REST API",
+            "Node.js",
+            "Express",
+            "Nest.js",
+            "HTML5",
+            "CSS3",
+            "SCSS",
+            "Tailwind CSS",
+            "MUI",
+            "styled-components",
+            "Jest",
+            "React Testing Library",
+            "Vitest",
+            "Webpack",
+            "Vite",
+            "Git",
+            "Docker",
+            "CI/CD",
+            "WebSocket",
+        ],
         bio: [
             "I live in the Republic of Dagestan.",
-            "Started programming at the age of 13. I loved to play games, so i decided to become a game developer. Started with c#.",
-            "From video tutorials on the Internet, I learned enough knowledge to create games on Unity. I was passionate about this business and created games one by one. I posted one of them on google play.",
-            "In search of an opportunity to monetize my activities, I found a vacancy in a nearby city in Vue JS.",
-            "Therefore, I diligently began to study html css js. Unfortunately, I was not hired because of my age.",
-            "Within six months of studying, I was hired by spichka dev as a backend developer. I got my second wind.",
-            "I really liked learning and communicating with my colleagues, so in another half a year I became a full stack. Since the tasks on the backend are over, I asked them to give me tasks on the front. So I started my dive into React JS. Since then (4 years), I have been studying it and trying to get better and better.",
-            "English level - \"B2\" Also studied on my own.",
-            "I actively follow the latest trends and changes in IT, because for me this area is very interesting, and I am ready to devote my life to it. Therefore, I am looking for a strong team in which I could develop, learn new things, be useful.",
-            "If you need a motivated employee who is ready to develop and become better every day, then feel free to get in touch with me, I will be happy to answer ;)",
+            "I started programming at the age of 13. I loved playing games, so I decided to become a game developer. Started with C#.",
+            "From video tutorials on the Internet, I learned enough to create games on Unity. I was passionate about it and made games one after another. I published one of them on Google Play.",
+            "Looking for a way to monetize what I was doing, I found a job opening in a nearby city — Vue JS.",
+            "So I started studying HTML, CSS and JS. Unfortunately, they didn't hire me because of my age.",
+            "After six months of studying, spichka dev hired me as a backend developer. I got my second wind.",
+            "I loved learning and communicating with my colleagues, so six months later I became a full-stack developer. Backend tasks were running out, so I asked for frontend tasks. That's how I dove into React JS, and I've been studying it and getting better ever since.",
+            "My English level is B2 — also self-taught.",
+            "I actively follow the latest trends and changes in IT, because this field genuinely interests me and I'm ready to dedicate my life to it. That's why I'm looking for a strong team where I can grow, learn new things and be useful.",
+            "If you need a motivated developer who is ready to grow and get better every day — feel free to get in touch, I'll be happy to answer ;)",
         ],
-        hard: "Hard",
+        experience: {
+            title: "Experience",
+            total: "5 years",
+            jobs: [
+                {
+                    company: "X5 (5Post)",
+                    role: "Senior Frontend Developer",
+                    period: "February 2025 — present",
+                    summary:
+                        "Web services for 5Post logistics and courier delivery: admin panel, customer site, pickup-point portal, internal services.",
+                    achievements: [
+                        "Built a React application for pickup-point staff from scratch — now used across all 5Post pickup points",
+                        "Introduced AI into the development process (code review, AI agents) — feature delivery speed +120%",
+                        "Designed and launched a design system together with the designer — sped up development of dependent apps",
+                        "Set up API docs generation via build config — faster development and testing",
+                    ],
+                },
+                {
+                    company: "AstralSoft",
+                    role: "Middle Frontend Developer",
+                    period: "August 2023 — February 2025",
+                    summary:
+                        "Astral EDO — electronic document management service (doc.astral.ru). React, GraphQL, code review, testing, shared architecture and npm packages.",
+                    achievements: [
+                        "Eliminated 400+ circular dependencies — memory usage −25%, wrote CI to prevent new ones",
+                        "Optimized rendering of a huge data list by 20%",
+                        "Found a vulnerability that crashed the server and helped fix it",
+                    ],
+                },
+                {
+                    company: "Spichka",
+                    role: "Frontend Developer",
+                    period: "November 2021 — June 2023",
+                    summary:
+                        "E-commerce projects: the Splover marketplace, the Karjewy online store and their admin panels.",
+                    achievements: [
+                        "Made Karjewy catalog pages load 3× faster — from 2.3 s to 0.7 s (caching, re-render bug hunt, image optimization)",
+                    ],
+                },
+            ],
+        },
+        hard: "Hard skills",
         hardSkills: [
-            "React, Next js",
-            "Redux, redux-toolkit ,Mobx",
-            "React query, Graphql, Apollo, RestApi",
-            "Jest, React-testing-library",
-            "HTML5, Css3, Scss, JavaScript, TypeScript",
-            "Node js, Express js, feathers js, Nest js",
-            "Sequelize, Docker",
-            "Webpack, Babel, Git",
-            "English - B2",
+            "React, Next.js",
+            "Redux, Redux Toolkit, MobX",
+            "React Query, GraphQL, Apollo, REST API",
+            "Jest, React Testing Library, Vitest",
+            "HTML5, CSS3, SCSS, JavaScript, TypeScript",
+            "Node.js, Express, Nest.js",
+            "Docker, CI/CD",
+            "Webpack, Vite, Git",
+            "English — B2",
         ],
-        soft: "Soft",
+        soft: "Soft skills",
         softSkills: [
             "Creativity. Innovative, imaginative.",
             "Teamwork. Collaborative, cooperative.",
             "Adaptability. Flexible, responsive.",
             "Problem-solving. Analytical, logical.",
-            "Growth Mindset. Open-minded, optimistic.",
-            "Self-Study. Proactive, motivated, continuous.",
+            "Growth mindset. Open-minded, optimistic.",
+            "Self-study. Proactive, motivated, continuous.",
         ],
     },
     projects: {
         commercial: "Commercial",
-        commercialSubtitle:
-            "These are interesting projects that I`ve made on order",
-        pet: "Pet",
+        commercialSubtitle: "Projects I built for clients and company teams",
+        internal: "Internal product",
+        pet: "Pet projects",
         petSubtitle:
-            "These are interesting projects that come to my mind, or for practicing new technologies.",
+            "Projects that came to my mind or were made to practice new technologies.",
         docsParagraph:
             "Electronic document management service with contractors. It works both from 1C and in the web cabinet format in your browser. Getting documents is free!",
         pvz: {
             name: "Pvz portal",
-            description: "Application for receiving and issuing orders",
+            description: "5Post pickup-point portal",
+            result: "Built from scratch — used across the whole network",
         },
         omni: {
             name: "Omni portal",
-            description: "Admin panel for FivePost network employees",
+            description:
+                "Admin panel: orders, warehouses, business processes of 5Post",
         },
         docs: {
             name: "Docs",
             description: "Electronic document management",
+            result: "Eliminated 400+ circular dependencies — memory −25%",
         },
         splover: {
             name: "Splover",
-            description: "Platforms, trainings marketplace",
+            description: "Platforms and trainings marketplace",
         },
         sploverAdmin: {
             name: "Splover Admin",
-            description: "Admin panel for splover",
+            description: "Admin panel for Splover",
         },
         karjewy: {
             name: "Karjewy",
-            description: "Online jewelry shop",
+            description: "Online jewelry store",
+            result: "Catalog loads 3× faster — 2.3 s → 0.7 s",
         },
         karjewyAdmin: {
             name: "Karjewy admin",
-            description: "Admin panel for karjewy",
+            description: "Admin panel for Karjewy",
         },
         catTrap: {
             name: "Cattrap",
@@ -220,11 +395,11 @@ const en: typeof ru = {
         },
         rinja: {
             name: "Rinja game",
-            description: "Arcade 2d runner",
+            description: "Arcade 2D runner on Google Play",
         },
         hackerSM: {
             name: "Social Media",
-            description: "(Coming soon)",
+            description: "Social network clone — WIP",
         },
     },
 };
@@ -260,6 +435,7 @@ export const LanguageProvider: FunctionComponent<{ children: ReactNode }> = ({
 
     useEffect(() => {
         document.documentElement.lang = lang;
+        document.title = translations[lang].metaTitle;
     }, [lang]);
 
     const toggleLang = useCallback(() => {
@@ -283,6 +459,7 @@ export const LanguageProvider: FunctionComponent<{ children: ReactNode }> = ({
     );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useTranslation = (): ILanguageContext => {
     const ctx = useContext(LanguageContext);
     if (!ctx) {
