@@ -79,7 +79,7 @@ const MainPage: FunctionComponent = () => {
             <div className="size-to-end flex lg:flex-row flex-col justify-between items-center ignore-padding lg xl">
                 <div className="2xl:max-w-[600px] lg:max-w-[350px] max-w-[600px] h-full flex flex-col justify-center px-5 lg:px-0">
                     <div className="lg:whitespace-nowrap">
-                        <h1 className="relative font-extrabold text-transparent 2xl:text-4xl xl:text-3xl text-2xl bg-clip-text bg-gradient-to-r from-amber-500 to-rose-600 w-fit pb-2">
+                        <h1 className="relative font-extrabold text-transparent 2xl:text-4xl text-3xl bg-clip-text bg-gradient-to-r from-amber-500 to-rose-600 w-fit pb-2">
                             <span className="invisible" aria-hidden="true">
                                 {strings.main.hiName}
                             </span>
@@ -94,7 +94,7 @@ const MainPage: FunctionComponent = () => {
                                 className="absolute left-0 top-0 w-full bg-clip-text bg-gradient-to-r from-amber-500 to-rose-600"
                             />
                         </h1>
-                        <h2 className="relative font-extrabold text-transparent 2xl:text-4xl xl:text-3xl text-2xl bg-clip-text bg-gradient-to-r from-amber-500 to-rose-600 w-fit">
+                        <h2 className="relative font-extrabold text-transparent 2xl:text-4xl text-3xl bg-clip-text bg-gradient-to-r from-amber-500 to-rose-600 w-fit">
                             <span className="invisible" aria-hidden="true">
                                 {strings.main.role}
                             </span>
